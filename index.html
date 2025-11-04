@@ -1,0 +1,45 @@
+c:\Users\Pavithra C\Desktop\WT22\script.js<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hospital Appointment Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>🩺 Hospital Appointment Booking</h2>
+    <form id="appointmentForm" method="post" action="submit.php">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Contact Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="department">Department:</label>
+      <select id="department" name="department" required>
+        <option value="">--Select Department--</option>
+        <option>Cardiology</option>
+        <option>Dermatology</option>
+        <option>Neurology</option>
+        <option>Orthopedics</option>
+        <option>Pediatrics</option>
+      </select>
+
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="message">Additional Message:</label>
+      <textarea id="message" name="message" rows="3"></textarea>
+
+      <button type="submit">Book Appointment</button>
+    </form>
+
+    <div id="response"></div>
+  </div>
+</body>
+</html>
